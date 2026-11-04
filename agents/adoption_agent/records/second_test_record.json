@@ -1,0 +1,17 @@
+{
+  "version": "0.2-student",
+  "date": "2026-11-03",
+  "method": "Assistant-generated second-pass responses in the current Codex conversation applying revised instructions and the unchanged evidence/cases. No external API, isolated independent model run, or actual customer-service experiment. Python serialized answers and ran validators.",
+  "changes": [
+    "Immediate recommendation for A changed from conditional BOUNDED_EXPERIMENT to PROOF_OF_CONCEPT.",
+    "B remains DEFER with explicit remediation-to-PoC-to-pilot sequence.",
+    "Both use identical proposed measurable gates and sample design; organizational approval gates differ."
+  ],
+  "evidence_sha256": "d7ce43234fe5c6ddba83991e913b5ffa06df8763c6c071836c00314ab2d63fbd",
+  "remaining_limitations": [
+    "Thresholds need management review; no actual performance data.",
+    "Sample is screening-oriented, not statistically powered for rare harms or causal effects.",
+    "Shared conversational context limits independence."
+  ],
+  "preservation": "Version 1 outputs and test record left unchanged; original specialist instructions and metadata copied to records before revision."
+}

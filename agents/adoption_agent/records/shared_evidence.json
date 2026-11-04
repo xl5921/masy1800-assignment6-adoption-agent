@@ -1,0 +1,69 @@
+{
+  "packet_version": "1.0",
+  "access_date": "2026-11-03",
+  "applies_to": [
+    "primary",
+    "contrast_1"
+  ],
+  "verification": "Linked original texts were opened and relevant passages inspected. NBER pages returned 403; the author-hosted published paper and survey authors official Fed article were used instead. This is a focused evidence packet, not an exhaustive latest-market review.",
+  "sources": [
+    {
+      "id": "E1",
+      "title": "Generative AI at Work",
+      "authors": "Erik Brynjolfsson, Danielle Li, Lindsey Raymond",
+      "date": "2025-02-04; QJE 140(2), 889\u2013942",
+      "url": "https://danielle.li/assets/docs/GenerativeAIatWork.pdf",
+      "locator": "Abstract and introduction, printed pp. 889\u2013891",
+      "type": "Peer-reviewed empirical study; author-hosted published text",
+      "finding": "Among 5,172 support agents at one business-software firm, AI assistance increased issues resolved per hour by 15% on average; effects differed by experience and skill. Highly skilled workers had small quality declines.",
+      "supports": "A plausible benefit hypothesis for assisted customer service and a reason to evaluate quality alongside speed.",
+      "limitations": "One firm and an earlier system; not an e-commerce trial, a current-model benchmark, or a guarantee of cost savings. Use the published version consistently, not the earlier 14% working-paper estimate."
+    },
+    {
+      "id": "E2",
+      "title": "Artificial Intelligence Risk Management Framework: Generative Artificial Intelligence Profile (NIST AI 600-1)",
+      "date": "2024-07",
+      "url": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf",
+      "locator": "Introduction; risk overview, sections on confabulation, data privacy and human-AI configuration",
+      "type": "Official voluntary cross-sector risk guidance",
+      "finding": "Identifies false output, privacy disclosure, and human overreliance as generative-AI risks; advocates context-sensitive risk management.",
+      "supports": "Evaluate correctness, data exposure and review effectiveness before expansion. Human approval alone is not assurance.",
+      "limitations": "Not binding law, a certification, a measured failure rate, or evidence that either hypothetical organization has effective controls."
+    },
+    {
+      "id": "E3",
+      "title": "Retrieval augmented generation (RAG) and indexes",
+      "date": "Updated 2026-08-21",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/concepts/retrieval-augmented-generation",
+      "locator": "Test and evaluate; Security and privacy considerations; Known limitations",
+      "type": "Official vendor technical documentation",
+      "finding": "RAG retrieves source content to ground responses. Quality depends on preparation and retrieval; inaccurate answers and sensitive-data leakage remain possible.",
+      "supports": "Audit knowledge quality and retrieval, validate answers and access controls; weak knowledge maintenance is a relevant organizational constraint.",
+      "limitations": "Vendor guidance, not independent effectiveness evidence; not a recommendation to buy Azure or proof that RAG eliminates errors."
+    },
+    {
+      "id": "E4",
+      "title": "The State of Generative AI Adoption in 2025",
+      "authors": "Alexander Bick, Adam Blandin, David Deming",
+      "date": "2025-11-13; observations through August 2025",
+      "url": "https://www.stlouisfed.org/on-the-economy/2025/nov/state-generative-ai-adoption-2025",
+      "locator": "Generative AI Adoption Continues to Climb",
+      "type": "Original survey authors reporting results at the St. Louis Fed",
+      "finding": "Reports 54.6% overall generative-AI usage and 37.4% work usage in August 2025 among the relevant US working-age survey population; earlier estimates were reweighted after question-sequencing changes.",
+      "supports": "Historical broad diffusion context only.",
+      "limitations": "Self-reported individual usage, not e-commerce enterprise deployment or success. Not a November 2026 adoption estimate; does not establish technical maturity or return on investment."
+    }
+  ],
+  "analyst_inferences": [
+    "Potential productivity benefits justify evaluation, not guaranteed implementation.",
+    "Different knowledge maintenance and approvals can change management action while technology evidence remains constant.",
+    "Proposed pilot metrics: factual/policy correctness, unsupported claims, privacy incidents, reviewer effort and total handling time versus the existing workflow. These are proposed evaluation choices, not observed results or thresholds mandated by sources."
+  ],
+  "remaining_gaps": [
+    "No measured company baseline or test outcomes.",
+    "No verified vendor, integration, pricing, data-processing terms or jurisdiction-specific requirements.",
+    "No directly comparable e-commerce production adoption rate.",
+    "No specific current model assessed; no global maturity rating justified."
+  ],
+  "usage_instruction": "Provide this identical packet with both prompt packets. Keep findings separate from hypothetical case assumptions. A local file path alone does not supply its content to ChatGPT; include the contents explicitly when running the tests."
+}

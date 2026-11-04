@@ -1,0 +1,62 @@
+{
+  "agent": {
+    "name": "Emerging Technology Adoption Agent",
+    "specialty": "Contextual emerging technology adoption recommendations",
+    "version": "0.1-student"
+  },
+  "analytical_question": "Should the hypothetical retailer start a limited human-reviewed LLM customer-service drafting pilot within the next three months?",
+  "general_et_finding": "E1 provides evidence of beneficial human-assisted customer support in one deployed setting, not universal readiness or guaranteed savings. E4 establishes historical broad individual diffusion, not e-commerce enterprise adoption. E2 and E3 identify persistent accuracy, privacy, and human-reliance risks. No particular current model has been assessed; a global maturity rating is not justified.",
+  "application_finding": "Knowledge-grounded drafting is plausibly suited to bounded policy and after-sales questions. Current order status requires authorized records checked by staff. Compare against manual replies and improved search/templates. Net advantage is unproven after review, integration, retrieval and maintenance costs. Evaluate relevant tasks and policy exceptions; exclude automated sending and financial actions.",
+  "evidence": [
+    {
+      "claim": "Among 5,172 support agents at one business-software firm, AI assistance increased issues resolved per hour by 15% on average; effects differed by experience and skill. Highly skilled workers had small quality declines.",
+      "source_or_reference": "E1 Generative AI at Work https://danielle.li/assets/docs/GenerativeAIatWork.pdf",
+      "date_or_recency": "2025-02-04; QJE 140(2), 889\u2013942; inspected 2026-11-03",
+      "evidence_type": "Peer-reviewed empirical study; author-hosted published text",
+      "notes": "One firm and an earlier system; not an e-commerce trial, a current-model benchmark, or a guarantee of cost savings. Use the published version consistently, not the earlier 14% working-paper estimate."
+    },
+    {
+      "claim": "Identifies false output, privacy disclosure, and human overreliance as generative-AI risks; advocates context-sensitive risk management.",
+      "source_or_reference": "E2 Artificial Intelligence Risk Management Framework: Generative Artificial Intelligence Profile (NIST AI 600-1) https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf",
+      "date_or_recency": "2024-07; inspected 2026-11-03",
+      "evidence_type": "Official voluntary cross-sector risk guidance",
+      "notes": "Not binding law, a certification, a measured failure rate, or evidence that either hypothetical organization has effective controls."
+    },
+    {
+      "claim": "RAG retrieves source content to ground responses. Quality depends on preparation and retrieval; inaccurate answers and sensitive-data leakage remain possible.",
+      "source_or_reference": "E3 Retrieval augmented generation (RAG) and indexes https://learn.microsoft.com/en-us/azure/foundry/concepts/retrieval-augmented-generation",
+      "date_or_recency": "Updated 2026-08-21; inspected 2026-11-03",
+      "evidence_type": "Official vendor technical documentation",
+      "notes": "Vendor guidance, not independent effectiveness evidence; not a recommendation to buy Azure or proof that RAG eliminates errors."
+    },
+    {
+      "claim": "Reports 54.6% overall generative-AI usage and 37.4% work usage in August 2025 among the relevant US working-age survey population; earlier estimates were reweighted after question-sequencing changes.",
+      "source_or_reference": "E4 The State of Generative AI Adoption in 2025 https://www.stlouisfed.org/on-the-economy/2025/nov/state-generative-ai-adoption-2025",
+      "date_or_recency": "2025-11-13; observations through August 2025; inspected 2026-11-03",
+      "evidence_type": "Original survey authors reporting results at the St. Louis Fed",
+      "notes": "Self-reported individual usage, not e-commerce enterprise deployment or success. Not a November 2026 adoption estimate; does not establish technical maturity or return on investment."
+    }
+  ],
+  "contrary_evidence_or_limitations": [
+    "The published customer-support study is not an e-commerce trial and reports heterogeneous effects, including small quality declines for highly skilled workers.",
+    "Broad individual usage is not evidence of successful comparable enterprise deployments.",
+    "No local baseline, knowledge audit, vendor assessment, price, integration test or applicable jurisdiction is supplied.",
+    "All company characteristics are hypothetical assumptions. No customer-service pilot or technical PoC has actually been executed."
+  ],
+  "confidence_and_uncertainty": "Moderate confidence in the need for staged evaluation; low confidence in local net benefit and production readiness. External evidence is relevant but transfer is uncertain. Missing model-specific and organizational validation prevents unconditional approval.",
+  "value_opportunity_implication": "Potential reduction in handling effort and more consistent replies must be tested against the existing workflow and simpler alternatives. The 15% study result is not a forecast for this company. Include reviewer time, correction effort, system costs and knowledge upkeep.",
+  "risk_governance_implication": "Incorrect commitments and disclosures can survive human review. Require source checking, escalation, least-privilege data access and responsible oversight. Manual fallback makes the tool reversible, but sent messages and disclosed information are not fully reversible. Human management retains approval. Hand off training, staffing and rollout design to the Organizational Adoption Agent; refer legal/privacy questions to appropriate reviewers.",
+  "abstention_or_more_information_needed": [
+    "Which jurisdiction, vendor, model, retention terms and data flows apply?",
+    "What are baseline correctness, handling time, review workload and costs?",
+    "What does the knowledge audit find, and who has authority to approve live exposure?"
+  ],
+  "organization_specific_finding": "Company A hypothetically has a knowledge owner and regular updates, plus a coordinator and normal approval route. These are useful starting conditions, not demonstrated knowledge accuracy, reviewer effectiveness or clearance. Its moderate posture supports learning within explicit boundaries; it does not improve technical maturity.",
+  "recommendation_management_implication": "BOUNDED_EXPERIMENT, conditional: prepare a staged evaluation within the three-month decision horizon; do not begin live exposure now. First audit a narrow returns-policy and common after-sales subset and perform an offline evaluation using approved synthetic or adequately de-identified cases. Proceed to a limited human-reviewed live pilot only after acceptable quality, data handling and management/security review. Proposed live stage: two weeks, subject to approval. Test whether total handling effort falls without material deterioration in policy correctness versus manual replies and search/templates. Record unsupported claims, policy errors, privacy incidents, reviewer correction time and total handling time. The customer-service lead owns monitoring; the knowledge owner resolves policy conflicts. Require source checks and escalation; exclude policy exceptions, autonomous actions and unverified order status. Stop on privacy disclosure or material policy misrepresentation; revert to manual handling. Expand only after reviewed evidence of net benefit and acceptable quality. These are proposed evaluation criteria, not measured outcomes or approved thresholds.",
+  "change_monitoring_triggers": [
+    "Before any live stage: completed knowledge audit, tested access controls, vendor/data review and management approval; unresolved critical issues move the posture to DEFER or offline-only PoC.",
+    "At the proposed two-week review: evaluate quality, total effort and costs against baseline; no demonstrated advantage supports redesign or stopping rather than expansion.",
+    "Any privacy disclosure or material policy error: pause live use, investigate and require remediation evidence before resuming.",
+    "Before expansion: management must accept explicit quality and benefit thresholds and review results."
+  ]
+}

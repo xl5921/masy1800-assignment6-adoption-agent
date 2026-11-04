@@ -1,0 +1,67 @@
+{
+  "agent": {
+    "name": "Emerging Technology Adoption Agent",
+    "specialty": "Contextual emerging technology adoption recommendations",
+    "version": "0.2-student"
+  },
+  "analytical_question": "Should the hypothetical retailer start a limited human-reviewed LLM customer-service drafting pilot within the next three months?",
+  "general_et_finding": "E1 provides evidence of beneficial human-assisted customer support in one deployed setting, not universal readiness or guaranteed savings. E4 establishes historical broad individual diffusion, not e-commerce enterprise adoption. E2 and E3 identify persistent accuracy, privacy, and human-reliance risks. No particular current model has been assessed; a global maturity rating is not justified.",
+  "application_finding": "Knowledge-grounded drafting is plausibly suited to bounded policy and after-sales questions. Current order status requires authorized records checked by staff. Compare against manual replies and improved search/templates. Net advantage is unproven after review, integration, retrieval and maintenance costs. Evaluate relevant tasks and policy exceptions; exclude automated sending and financial actions.",
+  "evidence": [
+    {
+      "claim": "Among 5,172 support agents at one business-software firm, AI assistance increased issues resolved per hour by 15% on average; effects differed by experience and skill. Highly skilled workers had small quality declines.",
+      "source_or_reference": "E1 Generative AI at Work https://danielle.li/assets/docs/GenerativeAIatWork.pdf",
+      "date_or_recency": "2025-02-04; QJE 140(2), 889\u2013942; inspected 2026-11-03",
+      "evidence_type": "Peer-reviewed empirical study; author-hosted published text",
+      "notes": "One firm and an earlier system; not an e-commerce trial, a current-model benchmark, or a guarantee of cost savings. Use the published version consistently, not the earlier 14% working-paper estimate."
+    },
+    {
+      "claim": "Identifies false output, privacy disclosure, and human overreliance as generative-AI risks; advocates context-sensitive risk management.",
+      "source_or_reference": "E2 Artificial Intelligence Risk Management Framework: Generative Artificial Intelligence Profile (NIST AI 600-1) https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf",
+      "date_or_recency": "2024-07; inspected 2026-11-03",
+      "evidence_type": "Official voluntary cross-sector risk guidance",
+      "notes": "Not binding law, a certification, a measured failure rate, or evidence that either hypothetical organization has effective controls."
+    },
+    {
+      "claim": "RAG retrieves source content to ground responses. Quality depends on preparation and retrieval; inaccurate answers and sensitive-data leakage remain possible.",
+      "source_or_reference": "E3 Retrieval augmented generation (RAG) and indexes https://learn.microsoft.com/en-us/azure/foundry/concepts/retrieval-augmented-generation",
+      "date_or_recency": "Updated 2026-08-21; inspected 2026-11-03",
+      "evidence_type": "Official vendor technical documentation",
+      "notes": "Vendor guidance, not independent effectiveness evidence; not a recommendation to buy Azure or proof that RAG eliminates errors."
+    },
+    {
+      "claim": "Reports 54.6% overall generative-AI usage and 37.4% work usage in August 2025 among the relevant US working-age survey population; earlier estimates were reweighted after question-sequencing changes.",
+      "source_or_reference": "E4 The State of Generative AI Adoption in 2025 https://www.stlouisfed.org/on-the-economy/2025/nov/state-generative-ai-adoption-2025",
+      "date_or_recency": "2025-11-13; observations through August 2025; inspected 2026-11-03",
+      "evidence_type": "Original survey authors reporting results at the St. Louis Fed",
+      "notes": "Self-reported individual usage, not e-commerce enterprise deployment or success. Not a November 2026 adoption estimate; does not establish technical maturity or return on investment."
+    }
+  ],
+  "contrary_evidence_or_limitations": [
+    "The published customer-support study is not an e-commerce trial and reports heterogeneous effects, including small quality declines for highly skilled workers.",
+    "Broad individual usage is not evidence of successful comparable enterprise deployments.",
+    "No local baseline, knowledge audit, vendor assessment, price, integration test or applicable jurisdiction is supplied.",
+    "All company characteristics are hypothetical assumptions. No customer-service pilot or technical PoC has actually been executed.",
+    "The proposed 120-case offline and 100-case live designs cannot establish absence of rare harms; uncertainty and representativeness must be reported.",
+    "No isolation between the two agent evaluations in this conversation; comparison is a first-pass reasoning test, not independent replication."
+  ],
+  "confidence_and_uncertainty": "Moderate confidence in the immediate staged recommendation; low confidence in local benefit or live readiness. No offline or live performance has been measured. Proposed thresholds operationalize a decision but are not empirically validated tolerances. Small, constructed samples and reviewer dependence limit generalization and causal claims.",
+  "value_opportunity_implication": "Potential reduction in handling effort and more consistent replies must be tested against the existing workflow and simpler alternatives. The 15% study result is not a forecast for this company. Include reviewer time, correction effort, system costs and knowledge upkeep.",
+  "risk_governance_implication": "Incorrect commitments and disclosures can survive human review. Require source checking, escalation, least-privilege data access and responsible oversight. Manual fallback makes the tool reversible, but sent messages and disclosed information are not fully reversible. Human management retains approval. Hand off training, staffing and rollout design to the Organizational Adoption Agent; refer legal/privacy questions to appropriate reviewers.",
+  "abstention_or_more_information_needed": [
+    "Which jurisdiction, vendor, model, retention terms and data flows apply?",
+    "What are baseline correctness, handling time, review workload and costs?",
+    "What does the knowledge audit find, and who has authority to approve live exposure?",
+    "Will management approve or revise the proposed thresholds and sample design given consequences and resources?",
+    "What actual evaluation results and uncertainty support progression?"
+  ],
+  "organization_specific_finding": "B has unresolved knowledge ownership and update consistency plus sequential approvals. Without trustworthy reference policies, scored testing could reward incorrect answers. Defer live exposure and prioritize remediation; synthetic test preparation may occur now, but a scored PoC needs an accountable policy owner and verified subset. The technical gates are the same as A; the organization has additional prerequisites.",
+  "recommendation_management_implication": "NOW: DEFER the live pilot and repair readiness prerequisites. Assign a knowledge owner, reconcile policies and clarify approval responsibilities. Synthetic case preparation is permissible, but do not claim a valid scored PoC before the reference subset is verified. NOT AUTHORIZED NOW: live customer exposure or full deployment. CONDITIONAL NEXT ACTION: after policy ownership, verified references and test-data permission, conduct an offline PROOF_OF_CONCEPT under the same technical protocol as A. A BOUNDED_EXPERIMENT can follow only after passing the gates and explicit sequential customer-service and IT/security/privacy approvals. No assurance that this will be achieved within three months. The customer-service lead coordinates; management assigns the policy owner. TEST DESIGN: All following quantities are proposed management criteria, not approved requirements or measured outcomes. First establish an audited, versioned policy subset with a named owner. Use approved synthetic/de-identified data and synthetic authorized order records. Lock 120 holdout cases separate from development: 40 order, 40 returns, 40 after-sales; each group contains 20 routine, 10 ambiguous/missing/conflicting-information, and 10 privacy/injection/out-of-scope cases. Evaluate manual, search/template, and AI-assisted workflows on the same tasks with different reviewers for the same case, randomized/counterbalanced assignments and balanced experience. Measure raw drafts and human-approved replies separately. A second scorer blinded to workflow where feasible scores against reference answers; adjudicate disagreements. Log counts per task and challenge, review and correction time, total handling time, and costs.\nPASS/STOP RULES: Proposed offline gates are zero critical final errors in 120 cases, at least 114/120 fully correct replies or appropriate escalations and at least 38/40 in each task group; all 60 challenge cases must obey applicable escalation and data boundaries. Critical errors include unauthorized disclosure, invented order status and unauthorized policy/financial commitments. A critical raw draft also blocks progression pending remediation and fresh testing, even if review caught it. Require at least 10% lower median total handling time than the better-performing eligible non-AI comparator, with no loss of accuracy; include review/correction effort. Report uncertainty and workload. A failed benefit gate supports redesign or a simpler alternative, not automatic live progression. Unknown costs preclude a positive-ROI claim. If tuning follows failure, use a fresh comparable holdout.\nCONDITIONAL LIVE DESIGN: Only after these gates and approvals, propose a human-reviewed live experiment capped at two weeks or 100 eligible inquiries, whichever occurs first. Independently audit every final reply and monitor daily. Stop immediately for a critical incident and restore manual handling. Fewer than 100 cases means incomplete evidence for the proposed progression review. At 100, require zero critical final incidents, at least 95/100 correct replies or valid escalations, and the same time and quality comparison against a contemporaneous comparable non-AI group; report task mix and selection bias. Any expansion requires a new management decision on evidence, costs and workload. No full deployment is authorized. Small samples and zero incidents do not establish rare-event safety; these are screening gates, not a powered causal study.",
+  "change_monitoring_triggers": [
+    "Before scoring: policy owner verifies reference answers and test data are approved; unresolved conflicts prevent valid scoring.",
+    "After offline testing: apply explicit 120-case quality and comparator-benefit gates; any critical draft requires remediation and fresh testing.",
+    "Before any live pilot: verify data/vendor controls and the case-specific organizational approvals.",
+    "During live use: stop immediately for critical incidents; review daily and at two weeks or 100 cases. Insufficient sample or failed gates prevents progression.",
+    "At the three-month decision review: reconsider remaining evidence, costs and prerequisites; no automatic expansion."
+  ]
+}
