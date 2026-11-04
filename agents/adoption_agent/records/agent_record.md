@@ -1,13 +1,13 @@
 # Specialist Agent Record — Assignment 6
 
 ## A. Agent and Version
-- Student / team: [TO COMPLETE: student name and team, or not assigned]
+- Student / team: Xinnan Li / Not applicable - individual assignment
 - Assignment / specialist: Assignment 6 — Emerging Technology Adoption Agent
 - Date: November 3, 2026
 - Agent version: 0.2-student
-- GitHub repository: [TO COMPLETE — not created/uploaded in this workflow]
-- Branch: [TO COMPLETE]
-- Commit: [TO COMPLETE after final version is committed]
+- GitHub repository: https://github.com/xl5921/masy1800-assignment6-adoption-agent
+- Branch: assignment-6-adoption
+- Commit: 7984f1f (agent implementation; short ID observed in user screenshot; full hash not independently retrieved)
 - Frozen scaffold: MASY1800_ET_Agent_Scaffold_v1_0
 
 ## B. Specialist Purpose and Context
@@ -46,3 +46,5 @@
 - Reversal condition: Approved local testing and resolved governance prerequisites can move PoC/deferral toward a bounded pilot; serious failures move it back toward remediation or rejection for the present.
 - Handoff to Organizational Adoption Agent: Detailed training, workload/staffing, stakeholder engagement and rollout design. Legal/privacy approval remains with authorized reviewers.
 - AI / verification note: See the accompanying AI verification draft. Original sources were checked by the assistant; personal student source verification should not be claimed until completed.
+
+Submission note: Repository metadata was completed locally after implementation commit 7984f1f. These metadata updates and accompanying submission reports are not claimed to be included in that GitHub commit. Baseline short commit: 31f57e1, observed in the earlier screenshot.
