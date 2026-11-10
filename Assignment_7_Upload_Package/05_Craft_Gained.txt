@@ -1,0 +1,3 @@
+Assignment 7 Craft Gained — Draft
+
+I learned that an organization can have a plausible technology application without being ready to operate it responsibly. Testing the same application against organizations with different ownership, maintenance, approval, and capacity conditions showed me that readiness is not a generic training checklist. I now need to ask who owns the system after launch, what evidence supports that ownership, and what must be true before offline evaluation, live use, and sustained operation. This will make my future technology judgments more specific, staged, and sensitive to organizational execution. (100 words or fewer)

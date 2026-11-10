@@ -1,0 +1,11 @@
+{
+  "version": "0.1-student",
+  "date": "2026-11-10",
+  "method": "Assistant-generated first-pass responses in this Codex conversation using the specialist instructions, case JSON, common output schema, and generated prompt packet. No external API call or real organizational experiment was performed.",
+  "cases": ["primary", "contrast_1"],
+  "validation": "Both response files passed the supplied basic validator; the frozen-core checker passed.",
+  "stable_finding": "The application remains bounded by human review and still requires reliable policy content, authorized order information, controls, and comparison with existing workflows.",
+  "changed_finding": "Company A appears able to prepare an offline evaluation, while Company B is not ready for live exposure because ownership, maintenance, approvals, staffing, and resources are unresolved.",
+  "observed_weakness": "The outputs identified readiness gaps but did not consistently present a ranked action sequence with explicit owners and separate gates for offline evaluation, live use, and sustained operation.",
+  "revision_status": "Revision required. The specialist instructions should require labeled action sections and explicit owner, stage, and reassessment fields."
+}

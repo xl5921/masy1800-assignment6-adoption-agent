@@ -1,0 +1,5 @@
+Assignment 7 Independent Professional Judgment
+
+On the supplied hypothetical facts, the organization is not yet ready for live implementation or sustained operation of the proposed customer-service drafting application. The strongest basis for progress is the possibility of a bounded offline evaluation using approved synthetic or adequately de-identified cases. The most consequential readiness gap is unclear or incomplete operating ownership: someone must be accountable for policy and knowledge quality, reviewer training and capacity, monitoring, incidents, approvals, recurring costs, and retirement.
+
+Before management proceeds beyond offline evaluation, it should verify the knowledge base, document reviewer capacity and escalation, complete IT/security/privacy and vendor review, confirm resources, and assign accountable owners. The judgment could change if the organization produces evidence of accurate and maintained policies, adequate trained capacity, approved data controls, sustainable resources, and an effective monitoring and incident process.

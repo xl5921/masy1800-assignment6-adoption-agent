@@ -1,0 +1,19 @@
+{
+  "version": "0.2-student",
+  "date": "2026-11-10",
+  "method": "Assistant-generated second-pass responses in this Codex conversation using the revised specialist instructions and the unchanged primary and contrast cases. No external API call or real organizational experiment was performed.",
+  "cases": ["primary", "contrast_1"],
+  "changes": [
+    "Added explicit CURRENT READINESS, STRENGTHS, PRIORITY GAPS, ACTIONS AND OWNERS, BEFORE OFFLINE EVALUATION, BEFORE LIVE USE, SUSTAINED OPERATION, and REASSESSMENT sections.",
+    "Separated readiness for offline evaluation from readiness for live use and sustained operation.",
+    "Required unsupported ownership to be marked unknown rather than inferred."
+  ],
+  "stable_finding": "Technology/application fit, human-review limitations, data and policy requirements, and the need to compare simpler workflows remain stable across cases.",
+  "changed_finding": "Company A is conditionally able to prepare an offline evaluation, while Company B is not ready for live use and lacks enough ownership and capacity evidence to set a reliable evaluation start date.",
+  "improvement": "The revised outputs rank readiness gaps, identify supported owner roles, separate offline/live/sustained gates, and preserve explicit missing-information requests.",
+  "remaining_limitations": [
+    "The cases are hypothetical and do not establish actual organizational readiness.",
+    "No external evidence packet or independent organizational measurements were used in this run.",
+    "The proposed gates are management-design suggestions, not validated standards or observed test thresholds."
+  ]
+}

@@ -1,0 +1,5 @@
+Assignment 7 AI and Verification Note — Draft
+
+ChatGPT/Codex helped inspect the teacher-supplied ZIP, identify the FROZEN CORE, create a working copy, establish the specialist folder, translate the Assignment 7 memo into an organizational-readiness framework, draft contrasting organizational cases, generate structured test outputs, validate the JSON responses, and diagnose a first-pass weakness.
+
+The teacher memo, common scaffold, Student Operating Guide, and case assumptions were read from the supplied files. The frozen-core integrity checker and response validator were run locally. The test outputs are hypothetical assistant-generated analyses, not real organizational observations or experiments. No external technology-performance, legal, regulatory, vendor, or market claim is being presented as verified evidence in this draft. Any consequential current claim used in the final submission should be checked against the original source and recorded with its date and limitation.
